@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Portal Bing</title>
+    <link rel="icon" href="img/yay.png" type="img/yay.png">
+    <style>
+        .navbar-custom {
+     background-image: url("img/aula2.jpg");
+     background-size: cover;    
+     }
+      body {
+        background-size:cover;
+        
+      }
+      
+      h1{
+        color:rgb(255, 255, 255);
+      }
+      p{
+        color:rgb(255, 255, 255);
+      }
+      h3{
+        color:rgb(255, 255, 255);
+      }
+      h4{
+        color:rgb(255, 255, 255);
+      }
+      h5{
+        color:rgb(255, 255, 255);
+      }
+      h6{
+        color:rgb(255, 255, 255);
+      }
+      h10{
+        color:rgb(255, 255, 255);
+      }
+      .navbar-brand {
+        color: white;
+        font-family: 'Comic Sans MS', cursive, bo;
+        }
+        img[src='img/lab.png'] {
+         border: 5px solid white;
+        }
+
+        footer{
+          background-color:rgb(70, 70, 70);
+        }
+        .footer .text-muted {
+        color: white;
+        }
+        
+        .nav-link {
+         color: rgb(255, 0, 0);
+        }
+        .navbar-brand {
+        color: rgb(255, 255, 255);
+        font-family: 'Comic Sans MS', cursive, bo;
+        }
+        .nav-link {
+         color: rgb(255, 255, 255);
+           font-family: "Comic Sans MS";
+        }
+        .offcanvas-title{
+          color: rgb(255, 255, 255);
+        }
+        .nav-link-custom {
+        color: white;
+        }
+        
+        .offcanvas {
+        background-color: rgba(107, 81, 255, 0.822);
+        }
+        .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    .footer {
+        margin-top:20%;
+        padding: 13px 0;
+        background-image: url('img/footer.jpg');
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        th {
+            text-align: center;
+        }
+        .today {
+            background-color: #fffb0085;
+        }
+        .table{
+            background-color: rgba(0, 0, 0, 0.534);
+            backdrop-filter: blur(10px);
+        }
+        table td {
+            color: rgb(255, 255, 255);
+        }
+        table tr td:nth-child(1) {
+             color: rgb(255, 110, 110);
+        }
+        .container{
+            color: rgb(255, 255, 255);
+        }
+        table th {
+        background-color: rgba(90, 90, 90, 0.404);
+        }
+        .greeting {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #current-date{
+            font-size: 17px;
+            
+        }
+    </style>
+
+
+</head>
+
+<nav class="navbar navbar-custom bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <strong style="font-weight: bold;">⬅️ Voltar</strong> 
+      </a>
+    </div>
+</nav>
+      
+    </div>
+  </nav>
+  
+
+<body>
+    <div class="container">
+        <br><br>
+        <h1><strong>Calendário</strong></h1>
+        <span class="greeting" id="greeting"></span>
+        <p id="current-date"></p>
+        <br><br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="7" id="month-year"></th>
+                </tr>
+                <tr>
+                    <th>Dom</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sáb</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Código JavaScript para gerar o calendário -->
+                <script>
+                    // Obter data atual
+                    var date = new Date();
+
+                    // Obter primeiro dia do mês de agosto
+                    var firstDay = new Date(date.getFullYear(), 7, 1);
+
+                    // Obter último dia do mês de agosto
+                    var lastDay = new Date(date.getFullYear(), 8, 0);
+
+                    // Gerar células do calendário
+                    var currentDay = firstDay;
+                    while (currentDay <= lastDay) {
+                        document.write('<tr>');
+
+                        for (var i = 0; i < 7; i++) {
+                            if (currentDay <= lastDay && (i >= currentDay.getDay() || currentDay > firstDay)) {
+                                if (currentDay.getDate() === date.getDate() && currentDay.getMonth() === date.getMonth()) {
+                                    document.write('<td class="today">' + currentDay.getDate() + '</td>');
+                                } else {
+                                    document.write('<td>' + currentDay.getDate() + '</td>');
+                                }
+                                currentDay.setDate(currentDay.getDate() + 1);
+                            } else {
+                                document.write('<td></td>');
+                            }
+                        }
+
+                        document.write('</tr>');
+                    }
+
+                    // Exibir mês e ano
+                    var monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+                    ];
+                    document.getElementById("month-year").innerHTML = monthNames[7] + " - " + date.getFullYear();
+                       // Obter data e hora atual
+                         var date = new Date();
+
+                               // Obter dia da semana
+                               var dayNames = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+                               var dayOfWeek = dayNames[date.getDay()];
+
+                               // Obter mês
+                               var monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                               "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+                               ];
+                               var month = monthNames[date.getMonth()];
+
+                               // Gerar mensagem de saudação com base na hora do dia
+                               var hour = date.getHours();
+                               var greeting;
+                               if (hour >= 0 && hour < 12) {
+                                    greeting = "Bom dia ☀️";
+                                 } else if (hour >= 12 && hour < 18) {
+                                       greeting = "Boa tarde 🌤️";
+                                 } else {
+                                     greeting = "Boa noite 🌛";
+                                 }
+
+        // Exibir saudação
+        document.getElementById("greeting").innerHTML = greeting;
+
+        // Exibir data atual
+        document.getElementById("current-date").innerHTML =
+            "Hoje é " + dayOfWeek + ", dia " + date.getDate() + " de " + month + " de " + date.getFullYear() + ".";
+                    
+
+                    // Obter hora atual
+                 var date = new Date();
+                var hour = date.getHours();
+
+                // Selecionar imagem de fundo com base na hora do dia
+                    var backgroundImage;
+                    if (hour >= 6 && hour < 12) {
+                         backgroundImage = "img/manha.jpg";
+                        } else if (hour >= 12 && hour < 18) {
+                              backgroundImage = "img/tarde.jpg";
+                            } else {
+                                backgroundImage = "img/noite.jpg";
+                         }
+
+                 // Alterar a imagem de fundo da página
+                     document.body.style.backgroundImage = "url(" + backgroundImage + ")";
+                    
+                </script>
+
+                
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Incluir bibliotecas JavaScript do Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="footer-content">
+        <img src="img/yay.png" width="auto" height="32">
+        <h10>© 2023 Alexandre Augusto</h10>
+    </div>
+</footer>
+
+</html>
