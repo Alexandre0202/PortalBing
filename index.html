@@ -12,13 +12,11 @@
     
     <style>
       .navbar-custom {
-     background-image: url("img/aula2.jpg");
-     background-size: cover;    
+        background: linear-gradient(to right, rgba(161, 175, 255, 0.986), rgba(24, 39, 255, 0.863), rgba(198, 225, 255, 0.856), rgb(255, 255, 255));
      }
       body {
         background-image: url(img/back.png);
-        background-size:cover;
-      }
+        background-size:cover      }
       h1{
         color:rgb(255, 255, 255);
       }
@@ -74,7 +72,8 @@
         }
         
         .offcanvas {
-        background-color: rgba(107, 81, 255, 0.822);
+        background-color: rgba(26, 26, 26, 0.144);
+        backdrop-filter: blur(10px);
         }
         .container {
         display: flex;
@@ -85,7 +84,8 @@
     .footer {
         margin-top:20%;
         padding: 13px 0;
-        background-image: url('img/footer.jpg');
+        background: transparent;
+        backdrop-filter: blur(80px);
     }
 
     .footer-content {
@@ -93,23 +93,24 @@
         justify-content: center;
         align-items: center;
     }
+
     </style>
 
 
   </head>
   
-  <nav class="navbar navbar-custom bg-body-tertiary fixed-top">
+  <nav class="navbar navbar-custom fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/bing.png" alt="Logo" width="auto" height="31" class="d-inline-block align-text-top me-2">
-        <strong style="font-weight: bold;">Portal Bing</strong>
-      </a>
-      
-      <div class="d-flex align-items-center">
-        <img src="img/sesi.png" width="auto" height="40" class="me-2">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="img/bing.png" alt="Logo" width="auto" height="31" class="d-inline-block align-text-top me-2">
+            <strong style="font-weight: bold;">Portal Bing</strong>
+        </a>
+
+        <div class="d-flex align-items-center">
+          <img src="img/sesi.png" width="auto" height="40" class="me-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
       </div>
       
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -165,43 +166,34 @@
         <div class="col-md-6">
           <h3><strong> O que temos para o dia de hoje?</strong></h3>
           <br>
-          <h4><strong>Aula de Inglês:</strong></h4>
-          <h6> Professora Orientadora: Dani<p> Aula Normal.</p></h6>
+          <h4><strong>Aula de Química:</strong></h4>
+          <h6> Professor Orientador: Pablo<p> Aula Normal.</p></h6>
         </div>
         <div class="col-md-6">
-          <br><br><br><img src="img/english.png" width="auto" height="150" style="border: 5px solid white;">
+          <br><br><br><img src="img/quimica.jpg" width="auto" height="150" style="border: 5px solid white;">
         </div>
       </div>
+      <br>
+
       <br>
       <div class="row">
         <div class="col-md-6">
           <br>
-          <h4><strong>Trabalho da Roda Redonda :</strong></h4>
-          <h6> Professora Orientadora: Bianca <strong><p>Das 08:00AM até as 10:00AM</p></strong></h6>
+          <h4><strong>Aula de Matemática:</strong></h4>
+          <h6> Professora Orientadora: Kamila <p> Aula normal.</p></h6>
         </div>
         <div class="col-md-6">
-          <br><br><img src="img/discucao.jpg" width="245" height="150" style="border: 5px solid rgb(201, 201, 201);">
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-6">
-          <br>
-          <h4><strong>Aula de Biologia:</strong></h4>
-          <h6> Professor Orientador: Michael <p> Aula normal.</p></h6>
-        </div>
-        <div class="col-md-6">
-          <br><br><img src="img/biologia.jpg" width="245" height="150" style="border: 5px solid rgb(201, 201, 201);">
+          <br><br><img src="img/matematica.jpg" width="255" height="150" style="border: 5px solid rgb(201, 201, 201);">
         </div>
         <br>
         <div class="row">
           <div class="col-md-6">
             <br>
-            <h4><strong>Aula de Filosofia:</strong></h4>
-            <h6> Professora Orientadora: Bianca <p> Aula normal.</p></h6>
+            <h4><strong>Aula de História:</strong></h4>
+            <h6> Professor Orientador: Thiago <p> Aula normal.</p></h6>
           </div>
           <div class="col-md-6">
-            <br><br><img src="img/filosofia.jpg" width="257" height="150" style="border: 5px solid rgb(201, 201, 201);">
+            <br><br><img src="img/história" width="265" height="150" style="border: 5px solid rgb(201, 201, 201);">
           </div>
         </div>
       </div>
