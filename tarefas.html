@@ -210,12 +210,15 @@
             </h6>
             <br><br>
             <h4><strong>📆 26/09/2023 Pesquisa Preliminar de Oficinas Tecnologicas</strong></h4>
-            <h5>Prática lego – Gramofone</h5><p>
-              <h6><strong>(Digitado)</strong></h6><p> <h6>⚠️OBS! Para Baixar abrir na verção Site</h6></p>
-              <a href="doc/Gramofone.docx" download>
-                <button type="button" type="button" class="btn btn-primary" >Baixar a Pesquisa</button>
+            <h5>Prática lego – Gramofone</h5>
+            <p>
+              <h6><strong>(Digitado)</strong></h6>
+              <p> <h6>⚠️OBS! Para Baixar abrir na versão Site</h6></p>
+              <a href="doc/Gramofone.docx" id="downloadLink">
+                <button type="button" type="button" class="btn btn-primary">Baixar a Pesquisa</button>
               </a>
             </p>
+            <h6 id="downloadMessage"></h6>
           </h6>
           <br><br>
           <h4><strong>📆 Mapa Conceitual de Matemática</strong></h4>
@@ -273,6 +276,15 @@
     </div>
    
   </body>
+
+<script>
+
+document.getElementById('downloadLink').addEventListener('click', function() {
+    // Exibir uma mensagem quando o botão de download é clicado.
+    document.getElementById('downloadMessage').textContent = '⬇️ O download está em andamento...';
+  });
+</script>
+
 
   <footer class="footer">
     <div class="footer-content">
