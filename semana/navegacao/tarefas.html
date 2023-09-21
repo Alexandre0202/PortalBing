@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles.css">
+    <title>Portal Bing</title>
+    <link rel="icon" href="/img/yay.png" type="/img/yay.png">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+
+    
+    <style>
+      .navbar-custom {
+        background: linear-gradient(to right, rgba(240, 197, 157, 0.986), rgba(85, 52, 20, 0.863), rgba(182, 131, 55, 0.856), rgb(255, 255, 255));
+     }
+      body {
+        background-image: url(/img/tarefas.jpg);
+        background-size:cover;
+      }
+      h1{
+        color:rgb(255, 255, 255);
+      }
+      p{
+        color:rgb(255, 255, 255);
+      }
+      h3{
+        color:rgb(255, 255, 255);
+      }
+      h4{
+        color:rgb(255, 255, 255);
+      }
+      h5{
+        color:rgb(255, 255, 255);
+      }
+      h6{
+        color:rgb(255, 255, 255);
+      }
+      h10{
+        color:rgb(255, 255, 255);
+      }
+      ul{
+        color:rgb(255, 255, 255);
+      }
+      .navbar-brand {
+        color: white;
+        font-family: 'Comic Sans MS', cursive, bo;
+        }
+        img[src='img/lab.png'] {
+         border: 5px solid white;
+        }
+
+        footer{
+          background-color:rgb(70, 70, 70);
+        }
+        .footer .text-muted {
+        color: white;
+        }
+        
+        .nav-link {
+         color: rgb(255, 0, 0);
+        }
+        .navbar-brand {
+        color: rgb(255, 255, 255);
+        font-family: 'Comic Sans MS', cursive, bo;
+        }
+        .nav-link {
+         color: rgb(255, 255, 255);
+           font-family: "Comic Sans MS";
+        }
+        .offcanvas-title{
+          color: rgb(255, 255, 255);
+        }
+        .nav-link-custom {
+        color: white;
+        }
+        
+        .offcanvas {
+        background-color: rgba(26, 26, 26, 0.144);
+        backdrop-filter: blur(10px);
+        }
+        .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    .footer {
+      margin-top:70%;
+        padding: 13px 0;
+        background: transparent;
+        backdrop-filter: blur(80px);
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+
+
+  </head>
+  
+  <nav class="navbar navbar-custom fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/img/bing.png" alt="Logo" width="auto" height="31" class="d-inline-block align-text-top me-2">
+            <strong style="font-weight: bold;">Portal Bing</strong>
+        </a>
+
+        <div class="d-flex align-items-center">
+          <img src="/img/sesi.png" width="auto" height="40" class="me-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mais opções</h5>
+          <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <h6><strong>Organização</strong></h6>
+            <li class="nav-item">
+              <a class="nav-link" href="aulas.html">🕝 Cronograma de Aulas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calendario.html">📅 Calendário</a>
+            </li>
+            <br><h6><strong> Tarefas e Trabalhos</strong></h6>
+            <li class="nav-item">
+              <a class="nav-link" href="finalizacao.html">📂 Finalização</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tarefas.html">📝 Tarefas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Tarefasvencidas.html">❌ Tarefas Vencidas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabalhoseq.html">📰 Trabalhos em Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prova.html">📄 Provas</a>
+            </li>
+            <br><h6><strong> Ajuda </strong></h6>
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">🗂️ Informações do Site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">⬅️ Voltar para o Inicío</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container container-fluid ">
+      <div class="text-center">
+        <h1>Cronograma de Tarefas da Sala 1!</h1>
+        <p>
+          Oficina: Comunicação e Sujeito
+        </p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="row">
+            <div class="col-md-12">
+              <h3><strong> 📝 Próximas Tarefas:</strong></h3>
+              <br>
+            </div>
+
+          <br>
+          <h4><strong>📆  Pesquisa Preliminar de Ciap</strong></h4>
+          <h5> 🔍Pergunta 1, 2 Data: 11/09<p>🔍Pergunta 3, 4 Data: 25/09
+          </p></h5><p>
+            <h6> 1- pesquise sobre a evolução tecnológica e quais impactos nas relações sociais.
+            <br> 2- Constatar os diferentes instrumentos tecnológicos seus usos e impactos.
+            <br> 3- Estrutura de equipamentos tecnológicos atuais e os obsoleto. (Escolher 1 equipamento).
+            <br> 4- Responsabilidade Social.
+          </p>
+
+          <br><br>
+          <h4><strong>📆26/09/2023 Relatorio de OF Tec</strong></h4>
+          <h5>🔍Tema: Gramafone </h5>
+          <p>
+            <h6> -  Componentes da equipe e suas funções</h6>
+            <h6> 1- Como modificar a velocidade de rotação do disco?
+            <br> 2- Como podemos amplificar o som?
+            <br> 3- A qualidade do som depende da velocidade de rotação?
+            <br> Comente características do som produzido.
+          </p>
+        </h6>
+
+            <br><br>
+            <h4><strong>📆 26/09/2023 Pesquisa Preliminar de Oficinas Tecnologicas</strong></h4>
+            <h5>Prática lego – Gramofone</h5>
+            <p>
+              <h6><strong>(Digitado)</strong></h6>
+              <p> <h6>⚠️OBS! Para Baixar abrir na versão Site</h6></p>
+              <a href="doc/Gramofone.docx" id="downloadLink">
+                <button type="button" type="button" class="btn btn-primary">Baixar a Pesquisa</button>
+              </a>
+            </p>
+            <h6 id="downloadMessage"></h6>
+          </h6>
+
+          <br><br>
+          <h4><strong>📆 Mapa Conceitual de Matemática</strong></h4>
+          <h5>📒Entrega: 27/09/2023 <strong>(25 pontos)</strong><p>📒Data final: 04/10/2023 <strong>(10 pontos)</strong>
+          </p></h5><p>
+              <h6><strong>(Manuscrito, com desenhos e fórmulas)</strong></h6><p> <h6>⚠️OBS! Obrigatório pelo menos 1 livro!</h6></p>
+              <perguntas>       
+              <h6>1) Arcos e ângulos.</h6>
+              <h6>2) Unidades de medidas para ângulos.</h6>
+              <h6>3) Relação entre grau e radiano.</h6>
+              <h6>4) Comprimento de arco.</h6>
+              <h6>5) Ciclo trigonométrico.</h6>
+              <h6>6) Seno, cosseno e tangente no ciclo trigonométrico.</h6>
+              <h6>7) Relações trigonométricas.</h6>
+              <h6>8) Redução de um ângulo ao primeiro quadrante.</h6>
+              </perguntas>     
+            </p>
+          </h6>
+          <br><br>
+          <h4><strong>📆 27/09/2023 Pesquisa preliminar de Física segmento 9</strong></h4>
+          <h5>📒Pode Ser Digitada! <strong>(50 pontos)</strong><p></p>
+          <br>
+          <h6>1. O que é uma onda?</h6>
+          <h6>2. Quais as 3 classificações das ondas? Explique e exemplifique as, de acordo com a direção de propagação, meio de propagação e forma de propagação.</h6>
+          <h6>3. Explique os elementos que compõe uma onda. (todos os 6 elementos).</h6>
+          <h6>4. Descreva os fenômenos de ondas: reflexão, refração e polarização.</h6>
+          <h6>5. Explique a interferência de ondas.</h6>
+          <h6>6. Determine a equação fundamental das ondas, com a discriminação de variáveis e unidades.</h6>
+          <h6>7. Diferencie infrassons e ultrassons.</h6>
+          <h6>8. Explique a frequência sonora humana audível.</h6>
+          <h6>9. Como ocorrem os fenômenos acústicos de:</h6>
+          <ul>
+            <h6>a) Timbre.</h6>
+            <h6>b) Eco;</h6>
+            <h6>c) Reverberação;</h6>
+            <h6>d) Nível sonoro;</h6>
+            <h6>e) Intensidade sonora;</h6>
+            <h6>f) Altura do som;</h6>
+            <h6>g) Ressonância;</h6>
+            <h6>h) Efeito doppler;</h6>
+          </ul>
+          <h6>10. Explique e informe a velocidade do som.</h6>
+          <h6>11. Equação e exemplos de cálculo com variáveis e unidades de eco, nível sonoro e efeito Doppler.</h6>
+          <h6>12. Como funcionam os tubos sonoros?</h6>
+          <h6>13. O que são e equação das ondas estacionárias, com um exemplo de cálculo.</h6>
+          <h6>14. Comparar física clássica e moderna.</h6>
+          <h6>15. Explique a dualidade onda partícula</h6>
+          <h6>16. Explique a teoria da relatividade</h6>
+          <h6>17. Explique o princípio da incerteza.</h6>
+          <h6>18. Explique os postulados de Einstein e a famosa equação da energia do mesmo.</h6>
+          </div>
+      </div>
+
+      <div>
+        <br><br>
+        <h4><strong>📆 28/09/2023 Pesquisa preliminar de Química</strong></h4>
+        <h5>📒Manuscrita, ou Digitada <strong>(50 pontos)</strong></h5>
+        <br>
+        <h6>1- O que a Química Orgânica estuda?</h6>
+        <h6>2- Descreva os prefixos da Química orgânica</h6>
+        <div style="display: flex; flex-wrap: wrap;">
+            <div style="flex: 1;">
+                <h6>a) álcool</h6>
+                <h6>b) fenol</h6>
+                <h6>c) aldeído</h6>
+                <h6>d) cetona</h6>
+                <h6>e) ácido carboxílico</h6>
+                <h6>f) éster</h6>
+            </div>
+            <div style="flex: 1;">
+                <h6>g) éter</h6>
+                <h6>h) haleto</h6>
+                <h6>i) anidrido</h6>
+                <h6>j) sal orgânico</h6>
+                <h6>k) amida</h6>
+                <h6>l) amina</h6>
+            </div>
+        </div>
+        
+            <h6>3- Classificação dos álcoois</h6>
+            <h6>4- Explique as propriedades dos compostos orgânicos: solubilidade, densidade, temperaturas de fusão e ebulição, acidez e basicida.</h6>
+      
+    
+    </div>
+    
+    
+    <div>
+      <br><br>
+      <h4><strong>📆 29/09/2023 Preliminar de Geografia</strong></h4>
+      <h5>📒Manuscrita,  <strong>(50 pontos)</strong></h5>
+      <h5>⚠️ Fazer a capa Padronizada</h5>
+      <h5>📖 Utilizar livro ( 1 Questão)</h5>
+      <br>
+      <h6>1- Demografia; população absoluta; população relativa; Crescimento vegetativo;
+  Taxa de natalidade
+  <h6> Taxa de mortalidade; Teorias Demograficas ( 4 : Matuseana, neomatusiana, reformista, ecomatusiana ); Distribuição da população mundial;</h6>
+  
+      <h6>2- Pirâmides Etárias : Diferentes formatos e seu significado.</h6>
+  
+      <h6>3- Transição demográfica : diferentes fases.</h6>
+  
+      <h6>4- Migração; Imigrantes; Emigrante;</h6>
+  
+      <h6>5- Migração Mundial: Área de ecúmeno e crise migratória.</h6>
+  
+      <h6>6- Terrorismo; RAcismo; Xenofobia.</h6>
+  
+      <h6>7- Conflitos separatistas: causas, Consequências, exemplos.</h6>
+  </div>
+  
+  <div>
+    <br><br>
+    <h4><strong>📆 29/09/2023 Pesquisa Preliminar de inglês</strong></h4>
+    <h5>📒Manuscrito,  <strong>(25 pontos)</strong></h5>
+    <h5>⚠️Lembrem da importância da organização dos tópicos, capricho e principalmente letra legível.</h5>
+    <br>
+    <h6>Topics to research about:</h6>
+
+    <h6>Slangs and Colloquialism</h6>
+
+    <h6>1. Explicar a diferença entre slangs e colloquialism;</h6>
+    <h6>2. Escrever dez exemplos de slangs;</h6>
+    <h6>3. Escrever dez exemplos de colloquialism.</h6>
+
+    <h6>Passive voice</h6>
+
+    <h6>1. Explicar o uso da voz passiva e suas regras gramaticais;</h6>
+    <h6>2. Escrever um exemplo para cada tempo verbal que possa ser utilizado.</h6>
+
+    <h6>Verbal Language, Nonverbal Language, Body Language, Textspeak</h6>
+
+    <h6>1. Explicar a utilização de cada tipo de linguagem;</h6>
+    <h6>2. Exemplificar todos eles;</h6>
+    <h6>3. Escrever dez exemplos de textspeak.</h6>
+
+    <h6>Phrasal Verbs</h6>
+
+    <h6>1. Explicar definição e uso dos phrasal verbs;</h6>
+    <h6>2. Escrever dez exemplos de phrasal verbs utilizados em contextos formais e dez 
+utilizados em contextos informais.</h6>
+
+    <h6>Affixes</h6>
+
+    <h6>1. Explicar o que são Prefixes, Suffixes and Circumfixes; </li>
+    <h6>2. Escrever dez exemplos de cada um com a tradução</li>
+</div>
+
+    <div>
+      <br><br>
+      <h4><strong>📆 09/10/2023 Pesquisa preliminar de Português Gramatica</strong></h4>
+      <h5>📒Manuscrito, <strong>(25 pontos)</strong></h5>
+      <br>
+      <h6>Sintaxe:</h6>
+      <h6>- Frase</h6>
+      <h6>- Oração</h6>
+      <h6>- Períodos Simples e Composto</h6>
+      <h6>- Termos da Oração</h6>
+      <h6>- Sujeito - Tipos de Sujeito</h6>
+      <h6>- Predicado Verbal / Nominal</h6>
+      </div>
+
+      <div>
+        <br><br>
+        <h4><strong>📆 26/10/2023 Pesquisa preliminar de Biologia</strong></h4>
+        <h5>📒Manuscrita <strong>(100 pontos)</strong></h5>
+        <p></p>
+        <br>
+        <h4><strong>📄Baixar a Pesquisa:</strong></h4><p></p>
+        <a href="doc/pesquisa preliminar PDF .pdf" download>
+          <button type="button" type="button" class="btn btn-primary" >Baixar a Pesquisa</button>
+        </a>
+        </p>
+        <h6 id="downloadMessage"></h6>
+        <br>
+        <h4><strong>📔Perguntas:</strong></h4>
+        <br>
+        <h6>1. Quais as funções do tecido epitelial?</h6>
+        <h6>2. Quais as características do tecido epitelial?</h6>
+        <h6>3. Comente sobre as especializações da superfície livre das células epiteliais.</h6>
+        <h6>4. Comente e esquematize as células dos tecidos de revestimento quanto ao número de camadas, formato celular, presença de especializações; e tecido epitelial glandular (endócrina e exócrina).</h6>
+        <h6>5. Comente sobre as glândulas anfícrinas.</h6>
+        <h6>6. Comente sobre as características e funções do tecido conjuntivo.</h6>
+        <h6>7. Comente sobre:</h6>
+        <h6><strong>Tecido Conjuntivo Propriamente Dito</strong></h6>
+        <h6>— Tecido conjuntivo frouxo</h6>
+        <h6>— Tecido conjuntivo denso modelado</h6>
+        <h6>— Tecido conjuntivo não modelado</h6>
+        <h6><strong>Tecido Conjuntivo Especial</strong></h6>
+        <h6>— Adiposo</h6>
+        <h6>— Cartilaginoso</h6>
+        <h6>— Ósseo</h6>
+        <h6>— Sanguíneo</h6>
+        <h6>8. Comente sobre as características e funções do tecido nervoso e muscular.</h6>
+        <h6>9. Comente sobre os órgãos dos sentidos.</h6>
+        <h6>10. Esquematize os sistemas abaixo, bem como sua função:</h6>
+        <h6>- sistema digestivo;</h6>
+        <h6>- sistema respiratório;</h6>
+        <h6>- sistema urinário;</h6>
+        <h6>- sistema endócrino;</h6>
+        <h6>- sistema nervoso;</h6>
+        <h6>- sistema reprodutor;</h6>
+        <h6>- sistema cardiovascular.</h6>
+        <br><br>
+        <h6><strong>✏️ Critérios de Referências</strong></h6<p>
+        <h6> Pergunta 1: --------</h6>
+        <h6> Resposta: -------------</h6>
+        <h6> Referência: Biologia Net. Disponível em : "Link". Acessado em 14 de setembro de 2023. </h6>
+        <h6><strong> Seguir este modelo de referências, para não perder nota! </strong></h6>
+
+        </p>
+    </div>
+    
+    
+
+    </div>
+   
+  </body>
+<script>
+
+document.getElementById('downloadLink').addEventListener('click', function() {
+    // Exibir uma mensagem quando o botão de download é clicado.
+    document.getElementById('downloadMessage').textContent = '⬇️ O download está em andamento...';
+  });
+</script>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+        <img src="/img/yay.png" width="auto" height="32">
+        <h10>© 2023 Alexandre Augusto</h10>
+    </div>
+</footer>
+</html>
