@@ -10,7 +10,7 @@
         var minutosAtuais = new Date().getMinutes();
         var pagina;
 
-        switch(diaDaSemana) {
+        switch (diaDaSemana) {
             case 0:
                 pagina = "semana/fimdesemana.html";
                 break;
@@ -34,10 +34,13 @@
                 break;
         }
 
-        // Verifica se é um dia útil (segunda a sexta) e se está entre 12:00 PM e 11:59 PM
-        if (diaDaSemana >= 1 && diaDaSemana <= 5 && (horaAtual > 11 || (horaAtual === 11 && minutosAtuais >= 0))) {
-            // Redireciona para outra página
+        // Verifica se é um dia útil (segunda a sexta) e se está entre 12:00 PM e 06:30 PM
+        if (diaDaSemana >= 1 && diaDaSemana <= 5 && (horaAtual > 11 || (horaAtual === 11 && minutosAtuais >= 0)) && (horaAtual < 18 || (horaAtual === 18 && minutosAtuais <= 30))) {
+            // Redireciona para "tarde.html"
             pagina = "semana/tarde.html";
+        } else {
+            // Caso contrário, redireciona para "noite.html"
+            pagina = "semana/noite.html";
         }
 
         window.location.href = pagina;
