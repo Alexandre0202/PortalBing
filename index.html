@@ -6,6 +6,8 @@
     <link rel="icon" href="/semana/img/yay.png" type="/semana/img/yay.png">
     <script type="text/javascript">
         var diaDaSemana = new Date().getDay();
+        var horaAtual = new Date().getHours();
+        var minutosAtuais = new Date().getMinutes();
         var pagina;
 
         switch(diaDaSemana) {
@@ -30,6 +32,12 @@
             case 6:
                 pagina = "semana/fimdesemana.html";
                 break;
+        }
+
+        // Verifica se é um dia útil (segunda a sexta) e se está entre 12:00 PM e 11:59 PM
+        if (diaDaSemana >= 1 && diaDaSemana <= 5 && (horaAtual > 11 || (horaAtual === 11 && minutosAtuais >= 0))) {
+            // Redireciona para outra página
+            pagina = "semana/tarde.html";
         }
 
         window.location.href = pagina;
