@@ -10,39 +10,41 @@
         var minutosAtuais = new Date().getMinutes();
         var pagina;
 
-        switch (diaDaSemana) {
-            case 0:
-                pagina = "semana/fimdesemana.html";
-                break;
-            case 1:
-                pagina = "semana/segunda.html";
-                break;
-            case 2:
-                pagina = "semana/terca.html";
-                break;
-            case 3:
-                pagina = "semana/quarta.html";
-                break;
-            case 4:
-                pagina = "semana/quinta.html";
-                break;
-            case 5:
-                pagina = "semana/sexta.html";
-                break;
-            case 6:
-                pagina = "semana/fimdesemana.html";
-                break;
-        }
-
-        // Verifica se é um dia útil (segunda a sexta) e se está entre 12:00 PM e 06:30 PM
-        if (diaDaSemana >= 1 && diaDaSemana <= 5 && (horaAtual > 11 || (horaAtual === 11 && minutosAtuais >= 0)) && (horaAtual < 18 || (horaAtual === 18 && minutosAtuais <= 30))) {
-            // Redireciona para "tarde.html"
+        // Verifica o horário atual
+        if (horaAtual >= 0 && horaAtual < 12) {
+            // De meia-noite até 11:59, redireciona para o HTML do dia da semana correspondente
+            switch (diaDaSemana) {
+                case 0:
+                    pagina = "semana/fimdesemana.html";
+                    break;
+                case 1:
+                    pagina = "semana/segunda.html";
+                    break;
+                case 2:
+                    pagina = "semana/terca.html";
+                    break;
+                case 3:
+                    pagina = "semana/quarta.html";
+                    break;
+                case 4:
+                    pagina = "semana/quinta.html";
+                    break;
+                case 5:
+                    pagina = "semana/sexta.html";
+                    break;
+                case 6:
+                    pagina = "semana/fimdesemana.html";
+                    break;
+            }
+        } else if (horaAtual >= 12 && horaAtual < 18 && minutosAtuais < 40) {
+            // Das 12:00 às 18:39, redireciona para o HTML da tarde
             pagina = "semana/tarde.html";
         } else {
-            // Caso contrário, redireciona para "noite.html"
+            // A partir de 18:40, redireciona para o HTML da noite
             pagina = "semana/noite.html";
         }
 
+        // Redireciona para a página correspondente
         window.location.href = pagina;
     </script>
 </head>
