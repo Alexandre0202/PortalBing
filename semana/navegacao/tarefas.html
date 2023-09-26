@@ -367,11 +367,11 @@ utilizados em contextos informais.</h6>
   <br>
   <h4><strong>📄Baixar a Tarefa:</strong></h4><p></p>
   <a href="../doc/Aula 1 - Carro Programável _ Aluno (1).pdf" download>
-    <button type="button" type="button" class="btn btn-primary" >Baixar a Pesquisa</button>
+    <button type="button" class="btn btn-primary" id="downloadLink">Baixar a Pesquisa</button>
   </a>
   <p id="downloadMessage"></p>
+</div>
 
-  </div>
 
   <div>
     <br><br>
@@ -465,14 +465,14 @@ utilizados em contextos informais.</h6>
     </div>
    
   </body>
-<script>
 
-document.getElementById('downloadLink').addEventListener('click', function() {
-    // Exibir uma mensagem quando o botão de download é clicado.
-    document.getElementById('downloadMessage').textContent = '⬇️ O download está em andamento...';
-  });
-</script>
 
+  <script type="text/javascript">
+    document.getElementById('downloadLink').addEventListener('click', function() {
+        // Exibir uma mensagem quando o botão de download é clicado.
+        document.getElementById('downloadMessage').textContent = '⬇️ O download está em andamento...';
+    });
+    </script>
 
   <footer class="footer">
     <div class="footer-content">
