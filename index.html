@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="Styles.css">
     <title>Portal Bing</title>
-    <link rel="icon" href="semana/img/yay.png" type="image/png">
+    <link rel="icon" href="/semana/img/yay.png" type="/semana/img/yay.png">
     <script type="text/javascript">
         var diaDaSemana = new Date().getDay();
         var horaAtual = new Date().getHours();
@@ -11,33 +11,42 @@
         var pagina;
 
         // Verifica se é final de semana (sábado ou domingo)
-        if (diaDaSemana === 0 || diaDaSemana === 6) {
+        if (diaDaSemana === 6) {
             pagina = "semana/fimdesemana.html";
-        } else if (horaAtual >= 0 && horaAtual < 12) {
-            // De meia-noite até 11:59, redireciona para o HTML do dia da semana correspondente
-            switch (diaDaSemana) {
-                case 1:
-                    pagina = "semana/segunda.html";
-                    break;
-                case 2:
-                    pagina = "semana/terca.html";
-                    break;
-                case 3:
-                    pagina = "semana/quarta.html";
-                    break;
-                case 4:
-                    pagina = "semana/quinta.html";
-                    break;
-                case 5:
-                    pagina = "semana/sexta.html";
-                    break;
+        } else if (diaDaSemana === 0) {
+            if (horaAtual >= 0 && horaAtual < 18) {
+                pagina = "semana/fimdesemana.html";
+            } else {
+                pagina = "semana/noite.html";
             }
-        } else if (horaAtual >= 12 && horaAtual < 18 && minutosAtuais < 40) {
-            // Das 12:00 às 18:39, redireciona para o HTML da tarde
-            pagina = "semana/tarde.html";
         } else {
-            // A partir de 18:40, redireciona para o HTML da noite
-            pagina = "semana/noite.html";
+            // Verifica o horário atual
+            if (horaAtual >= 0 && horaAtual < 12) {
+                // De meia-noite até 11:59, redireciona para o HTML do dia da semana correspondente
+                switch (diaDaSemana) {
+                    case 1:
+                        pagina = "semana/segunda.html";
+                        break;
+                    case 2:
+                        pagina = "semana/terca.html";
+                        break;
+                    case 3:
+                        pagina = "semana/quarta.html";
+                        break;
+                    case 4:
+                        pagina = "semana/quinta.html";
+                        break;
+                    case 5:
+                        pagina = "semana/sexta.html";
+                        break;
+                }
+            } else if (horaAtual >= 12 && (horaAtual < 18 || (horaAtual === 18 && minutosAtuais <=30))) {
+                // Das 12:00 às 18:30, redireciona para o HTML da tarde
+                pagina = "semana/tarde.html";
+            } else {
+                // A partir de 18:31, redireciona para o HTML da noite
+                pagina = "semana/noite.html";
+            }
         }
 
         // Redireciona para a página correspondente
