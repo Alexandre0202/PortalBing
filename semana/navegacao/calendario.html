@@ -1,103 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Calendario</title>
     <link rel="icon" href="../img/yay.png" type="../img/yay.png">
     <style>
-      .navbar-custom {
-        background: linear-gradient(to right, rgba(161, 175, 255, 0.514), rgba(24, 39, 255, 0.507), rgba(198, 225, 255, 0.479), rgba(255, 255, 255, 0.589));
-    
-    }
-      body {
-        background-size:cover;
-        
-      }
-      
-      h1{
-        color:rgb(255, 255, 255);
-      }
-      p{
-        color:rgb(255, 255, 255);
-      }
-      h3{
-        color:rgb(255, 255, 255);
-      }
-      h4{
-        color:rgb(255, 255, 255);
-      }
-      h5{
-        color:rgb(255, 255, 255);
-      }
-      h6{
-        color:rgb(255, 255, 255);
-      }
-      h10{
-        color:rgb(255, 255, 255);
-      }
-      .navbar-brand {
-        color: white;
-        font-family: 'Comic Sans MS', cursive, bo;
+        .navbar-custom {
+            background: linear-gradient(to right, rgba(161, 175, 255, 0.514), rgba(24, 39, 255, 0.507), rgba(198, 225, 255, 0.479), rgba(255, 255, 255, 0.589));
         }
-        img[src='img/lab.png'] {
-         border: 5px solid white;
+        body {
+            background-size: cover;
         }
-
-        footer{
-          background-color:rgb(70, 70, 70);
+        h1 {
+            color: rgb(255, 255, 255);
         }
-        .footer .text-muted {
-        color: white;
+        p {
+            color: rgb(255, 255, 255);
         }
-        
-        .nav-link {
-         color: rgb(255, 0, 0);
+        h3 {
+            color: rgb(255, 255, 255);
+        }
+        h4 {
+            color: rgb(255, 255, 255);
+        }
+        h5 {
+            color: rgb(255, 255, 255);
+        }
+        h6 {
+            color: rgb(255, 255, 255);
+        }
+        h10 {
+            color: rgb(255, 255, 255);
         }
         .navbar-brand {
-        color: rgb(255, 255, 255);
-        font-family: 'Comic Sans MS', cursive, bo;
+            color: white;
+            font-family: 'Comic Sans MS', cursive, bo;
+        }
+        img[src='img/lab.png'] {
+            border: 5px solid white;
+        }
+        footer {
+            background-color: rgb(70, 70, 70);
+        }
+        .footer .text-muted {
+            color: white;
         }
         .nav-link {
-         color: rgb(255, 255, 255);
-           font-family: "Comic Sans MS";
+            color: rgb(255, 0, 0);
         }
-        .offcanvas-title{
-          color: rgb(255, 255, 255);
+        .navbar-brand {
+            color: rgb(255, 255, 255);
+            font-family: 'Comic Sans MS', cursive, bo;
+        }
+        .nav-link {
+            color: rgb(255, 255, 255);
+            font-family: "Comic Sans MS";
+        }
+        .offcanvas-title {
+            color: rgb(255, 255, 255);
         }
         .nav-link-custom {
-        color: white;
+            color: white;
         }
-        
         .offcanvas {
-        background-color: rgba(26, 26, 26, 0.144);
-        backdrop-filter: blur(10px);
+            background-color: rgba(26, 26, 26, 0.144);
+            backdrop-filter: blur(10px);
         }
         .container {
-        display: flex;
-        flex-direction: column;
-        min-height: 20vh;
-    }
-
-    .footer {
-      margin-top:80%;
-        padding: 13px 0;
-        background: transparent;
-        backdrop-filter: blur(80px);
-    }
-
-    .footer-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+            display: flex;
+            flex-direction: column;
+            min-height: 20vh;
+        }
+        .footer {
+            margin-top: 80%;
+            padding: 13px 0;
+            background: transparent;
+            backdrop-filter: blur(80px);
+        }
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         th {
             text-align: center;
         }
         .today {
             background-color: #fffb0085;
         }
-        .table{
+        .table {
             background-color: rgba(0, 0, 0, 0.534);
             backdrop-filter: blur(10px);
         }
@@ -105,73 +96,62 @@
             color: rgb(255, 255, 255);
         }
         table tr td:nth-child(1) {
-             color: rgb(255, 110, 110);
+            color: rgb(255, 110, 110);
         }
-        .container{
+        .container {
             color: rgb(255, 255, 255);
         }
         table th {
-        background-color: rgba(90, 90, 90, 0.404);
+            background-color: rgba(90, 90, 90, 0.404);
         }
         .greeting {
             font-size: 24px;
             font-weight: bold;
         }
-        #current-date{
+        #current-date {
             font-size: 17px;
-            
+        }
+        .independencia {
+            color: rgb(255, 110, 110);
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #888;
+            background-color: transparent;
+        }
+        .navbar-nav .nav-link:active {
+            background-color: #888;
+            color: white;
+        }
+        .navbar-brand {
+            color: white;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .navbar-brand:hover {
+            color: #bcf5ff;
+            background-color: transparent;
+        }
+        .navbar-brand:active {
+            background-color: #d6f0ffb2;
+            color: white;
         }
         .independencia {
         color: rgb(255, 110, 110);
         font-weight: bold;
         }
-        .navbar-nav .nav-link {
-        color: white;
-        transition: color 0.3s, background-color 0.3s;
-    }
-
-   .navbar-nav .nav-link:hover {
-       color: #888;
-      background-color: transparent;
-    }
-
-    .navbar-nav .nav-link:active {
-       background-color: #888;
-       color: white;
-    }
-
-    .navbar-brand {
-        color: white;
-        transition: color 0.3s, background-color 0.3s;
-    }
-
-    .navbar-brand:hover {
-       color: #bcf5ff;
-       background-color: transparent;
-     }
-
-    .navbar-brand:active {
-        background-color: #d6f0ffb2;
-        color: white;
-    }
-
     </style>
-
-
 </head>
-
 <nav class="navbar navbar-custom bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../../index.html">
-        <strong style="font-weight: bold;">⬅️ Voltar</strong> 
-      </a>
+        <a class="navbar-brand" href="../../index.html">
+            <strong style="font-weight: bold;">⬅️ Voltar</strong>
+        </a>
     </div>
 </nav>
-      
-    </div>
-  </nav>
-  
-
 <body>
     <div class="container">
         <br><br>
@@ -200,117 +180,81 @@
                     // Obter data atual
                     var date = new Date();
 
-                    // Obter primeiro dia do mês de agosto
-                    var firstDay = new Date(date.getFullYear(), 8, 1);
+                    // Obter primeiro dia do mês de outubro
+                    var firstDay = new Date(date.getFullYear(), 9, 1);
 
-                    // Obter último dia do mês de agosto
+                    // Obter último dia do mês de outubro
                     var lastDay = new Date(date.getFullYear(), 9, 0);
 
                     // Gerar células do calendário
                     var currentDay = firstDay;
                     while (currentDay <= lastDay) {
-        document.write('<tr>');
-
-        for (var i = 0; i < 7; i++) {
-            if (currentDay <= lastDay && (i >= currentDay.getDay() || currentDay > firstDay)) {
-                if (currentDay.getDate() === date.getDate() && currentDay.getMonth() === date.getMonth()) {
-                    document.write('<td class="today">' + currentDay.getDate() + '</td>');
-                } else {
-                    // Adicione a classe "independencia" para destacar o dia 7 de setembro em vermelho
-                    if (currentDay.getDate() === 7 && currentDay.getMonth() === 8) {
-                        document.write('<td class="independencia">' + currentDay.getDate() + '</td>');
-                    } else {
-                        document.write('<td>' + currentDay.getDate() + '</td>');
+                        document.write('<tr>');
+                        for (var i = 0; i < 7; i++) {
+                            if (currentDay <= lastDay && (i >= currentDay.getDay() || currentDay > firstDay)) {
+                                if (currentDay.getDate() === date.getDate() && currentDay.getMonth() === date.getMonth()) {
+                                    document.write('<td class="today">' + currentDay.getDate() + '</td>');
+                                } else {
+                                    // Adicione a classe "independencia" para destacar o dia 12 de outubro em vermelho
+                                    if (currentDay.getDate() === 12 && currentDay.getMonth() === 9) {
+                                        document.write('<td class="independencia">' + currentDay.getDate() + '</td>');
+                                    } else {
+                                        document.write('<td>' + currentDay.getDate() + '</td>');
+                                    }
+                                    currentDay.setDate(currentDay.getDate() + 1);
+                                }
+                            } else {
+                                document.write('<td></td>');
+                            }
+                        }
+                        document.write('</tr>');
                     }
-                    
-                }
-                currentDay.setDate(currentDay.getDate() + 1);
-            } else {
-                document.write('<td></td>');
-            }
-        }
-
-        
-        document.write('</tr>');
-    }
 
                     // Exibir mês e ano
                     var monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
                         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
                     ];
-                    document.getElementById("month-year").innerHTML = monthNames[8] + " - " + date.getFullYear();
-                       // Obter data e hora atual
-                         var date = new Date();
+                    document.getElementById("month-year").innerHTML = monthNames[9] + " - " + date.getFullYear();
 
-                               // Obter dia da semana
-                               var dayNames = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
-                               var dayOfWeek = dayNames[date.getDay()];
-
-                               // Obter mês
-                               var monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
-                               "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
-                               ];
-                               var month = monthNames[date.getMonth()];
-
-                               // Gerar mensagem de saudação com base na hora do dia
-                               var hour = date.getHours();
-                               var greeting;
-                               if (hour >= 0 && hour < 12) {
-                                    greeting = "Bom dia ☀️";
-                                 } else if (hour >= 12 && hour < 18) {
-                                       greeting = "Boa tarde 🌤️";
-                                 } else {
-                                     greeting = "Boa noite 🌛";
-                                 }
-
-        // Exibir saudação
-        document.getElementById("greeting").innerHTML = greeting;
-
-        // Exibir data atual
-        document.getElementById("current-date").innerHTML =
-            "Hoje é " + dayOfWeek + ", dia " + date.getDate() + " de " + month + " de " + date.getFullYear() + ".";
-                    
-
-                    // Obter hora atual
-                 var date = new Date();
-                var hour = date.getHours();
-
-                // Selecionar imagem de fundo com base na hora do dia
-                    var backgroundImage;
-                    if (hour >= 6 && hour < 12) {
-                         backgroundImage = "../img/manha.jpg";
-                        } else if (hour >= 12 && hour < 18) {
-                              backgroundImage = "../img/tarde.jpg";
-                            } else {
-                                backgroundImage = "../img/noite.jpg";
-                         }
-
-                 // Alterar a imagem de fundo da página
-                     document.body.style.backgroundImage = "url(" + backgroundImage + ")";
-                    
+                    // Obter data e hora atual
+                    var date = new Date();
+                    var dayNames = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+                    var dayOfWeek = dayNames[date.getDay()];
+                    var monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+                    ];
+                    var month = monthNames[date.getMonth()];
+                    var hour = date.getHours();
+                    var greeting;
+                    if (hour >= 0 && hour < 12) {
+                        greeting = "Bom dia ☀️";
+                    } else if (hour >= 12 && hour < 18) {
+                        greeting = "Boa tarde 🌤️";
+                    } else {
+                        greeting = "Boa noite 🌛";
+                    }
+                    document.getElementById("greeting").innerHTML = greeting;
+                    document.getElementById("current-date").innerHTML =
+                        "Hoje é " + dayOfWeek + ", dia " + date.getDate() + " de " + month + " de " + date.getFullYear() + ".";
                 </script>
-
-                
-
-
             </tbody>
         </table>
     </div>
     <!-- Feriados -->
     <div class="container">
-      <h3><strong>Feriados e Datas Comemorativas 🗓️</strong></h3>
-      <h4><b>7 de setembro:</b> Dia da Independência do Brasil.</h4>
-     </div>
+        <h3><strong>Feriados e Datas Comemorativas 🗓️</strong></h3>
+        <h4><b>12 de outubro:</b> Nossa Senhora Aparecida</h4>
+        <h4><b>15 de outubro:</b> Dia do Professor</h4>
+        <h4><b>28 de outubro:</b> Dia do Servidor Público</h4>
+    </div>
     <!-- Incluir bibliotecas JavaScript do Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-
 <footer class="footer">
     <div class="footer-content">
         <img src="../img/yay.png" width="auto" height="32">
         <h10>© 2023 Alexandre Augusto</h10>
     </div>
 </footer>
-
 </html>
