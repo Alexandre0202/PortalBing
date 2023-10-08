@@ -125,6 +125,12 @@
         color: rgb(255, 110, 110);
         font-weight: bold;
         }
+
+        .recesso {
+            color: rgb(146, 157, 255);
+            font-weight: bold;
+        }
+
         .navbar-nav .nav-link {
         color: white;
         transition: color 0.3s, background-color 0.3s;
@@ -200,35 +206,36 @@
                     // Obter data atual
                     var date = new Date();
 
-                    // Obter primeiro dia do mês de agosto
-                    var firstDay = new Date(date.getFullYear(), 8, 1);
+                    // Obter primeiro dia do mês de outubro (mês 9 em JavaScript, pois começa em 0)
+                    var firstDay = new Date(date.getFullYear(), 9, 1);
 
-                    // Obter último dia do mês de agosto
-                    var lastDay = new Date(date.getFullYear(), 9, 0);
+                    // Obter último dia do mês de outubro
+                    var lastDay = new Date(date.getFullYear(), 10, 0);
 
                     // Gerar células do calendário
                     var currentDay = firstDay;
                     while (currentDay <= lastDay) {
         document.write('<tr>');
 
-        for (var i = 0; i < 7; i++) {
-            if (currentDay <= lastDay && (i >= currentDay.getDay() || currentDay > firstDay)) {
-                if (currentDay.getDate() === date.getDate() && currentDay.getMonth() === date.getMonth()) {
-                    document.write('<td class="today">' + currentDay.getDate() + '</td>');
-                } else {
-                    // Adicione a classe "independencia" para destacar o dia 7 de setembro em vermelho
-                    if (currentDay.getDate() === 7 && currentDay.getMonth() === 8) {
-                        document.write('<td class="independencia">' + currentDay.getDate() + '</td>');
-                    } else {
-                        document.write('<td>' + currentDay.getDate() + '</td>');
-                    }
-                    
-                }
-                currentDay.setDate(currentDay.getDate() + 1);
+            for (var i = 0; i < 7; i++) {
+        if (currentDay <= lastDay && (i >= currentDay.getDay() || currentDay > firstDay)) {
+            if (currentDay.getDate() === date.getDate() && currentDay.getMonth() === date.getMonth()) {
+                document.write('<td class="today">' + currentDay.getDate() + '</td>');
+            } else if (currentDay.getDate() === 12 && currentDay.getMonth() === 9) {
+                // Destacar o dia 12 de outubro em vermelho
+                document.write('<td class="independencia">' + currentDay.getDate() + '</td>');
+            } else if (currentDay.getDate() === 13 && currentDay.getMonth() === 9) {
+                // Destacar o dia 13 de outubro em azul (recesso)
+                document.write('<td class="recesso">' + currentDay.getDate() + '</td>');
             } else {
-                document.write('<td></td>');
+                document.write('<td>' + currentDay.getDate() + '</td>');
             }
+            currentDay.setDate(currentDay.getDate() + 1);
+        } else {
+            document.write('<td></td>');
         }
+    }
+    
 
         
         document.write('</tr>');
@@ -238,7 +245,7 @@
                     var monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
                         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
                     ];
-                    document.getElementById("month-year").innerHTML = monthNames[8] + " - " + date.getFullYear();
+                    document.getElementById("month-year").innerHTML = monthNames[9] + " - " + date.getFullYear();
                        // Obter data e hora atual
                          var date = new Date();
 
@@ -296,13 +303,16 @@
             </tbody>
         </table>
     </div>
-    <!-- Feriados -->
-    <div class="container">
-      <h3><strong>Feriados e Datas Comemorativas 🗓️</strong></h3>
-      <h4><b>7 de setembro:</b> Dia da Independência do Brasil.</h4>
-     </div>
-    <!-- Incluir bibliotecas JavaScript do Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Datas comemorativas e feriados -->
+<div class="container">
+    <h3><strong>Feriados e Datas Comemorativas 🗓️</strong></h3>
+    <h3><strong>12 de outubro:</strong></h3> <h4>Feriado de Nossa Senhora Aparecida e Dia das Crianças.</h4>
+    <h3><strong>13 de outubro: </strong></h3> <h4>Recesso.</h4>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
