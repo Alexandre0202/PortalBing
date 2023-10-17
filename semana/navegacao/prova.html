@@ -123,6 +123,10 @@
         background-color: #d6f0ffb2;
         color: white;
     }
+    table {
+    background-color: rgba(11, 25, 51, 0.5); /* Cor preta com 50% de transparência */
+    backdrop-filter: blur(40px); /* Adiciona um desfoque ao conteúdo de fundo */
+    }
     </style>
 
 
@@ -187,36 +191,61 @@
 
 
   <body>
-    <br>
-    <div class="container container-fluid ">
-      <div class="text-center">
-       <br><br><br>s <h1>Cronograma de Provas da Sala 1!</h1>
-       <p>
-        Oficina: Conversando com IA
-      </p>
-      </div>
-      <br>
-      <div class="row">
-        <div class="row">
-            <div class="col-md-12">
-              <h3><strong> 📄 Próximas Provas:</strong></h3>
-              <br>
-            </div>
-            <br><br>
-            <h4><strong>🧾 Simulado  estilo Enem</strong>
-            <p>📆 02/10/2023 e 03/10/2023 </p></h4>
+    <br><br><br><br>
+    <div class="container container-fluid">
+        <div class="text-center">
+            <h1>Cronograma de Provas da Sala 1!</h1>
+            <p>Oficina: Conversando com IA</p>
+        </div>
+        <br><br>
 
-            
-            
-          </div>
-          
-  
-      
-      </div>
-      <br>
+        <table border="1">
+          <tr>
+              <th colspan="2" style="text-align: center;"><h5><strong>📄 Próximas Provas:</strong></h5></th>
+          </tr>
+      </table>
+
+      <ProivasAtivas>
+        <table border="1" style="width: 100%;">
+          <tr>
+              <td colspan="2" style="padding: 30px;">
+                  <h4>🧾 Nenhuma por enquanto!</h4>
+                  <h5>- Aproveite! </h5>
+                  <br>
+              </td>
+          </tr>
+      </table>
+    </ProivasAtivas>
+
+    
+
+    <br><br><br>   
+
+    <table border="1">
+      <tr>
+          <th colspan="2" style="text-align: center;"><h5><strong>❌ Provas que já venceram!</strong></h5></th>
+      </tr>
+  </table>
+
+    <table border="1" style="width: 100%;">
+      <tr>
+          <td colspan="2" style="padding: 30px;">
+            <h5>- Aqui tem todas as provas que ja venceram!</h5>
+            <br>
+            <h4><strong>🧾 Simulado estilo Enem</strong></h4>
+            <h5><p>📆 02/10/2023 e 03/10/2023 </p></h5>
+          </td>
+      </tr>
+  </table>
+
+
+
+
+
     </div>
-   
-  </body>
+
+</body>
+
 
   <footer class="footer">
     <div class="footer-content">
