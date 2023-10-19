@@ -126,6 +126,41 @@
         background-color: #d6f0ffb2;
         color: white;
     }
+
+    #myModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+        #myModal img {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        #myModal .close {
+            position: absolute;
+            top: 50px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        #myModal .close:hover,
+        #myModal .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 
 
@@ -212,9 +247,51 @@
 
       <div style="text-align: justify;">
         <br><br>
-        <h4><strong>📆 20/10/2023 TRABALHO PIRÂMIDE ETÁRIA DA ÍNDIA DE GEOGRAFIA</strong></h4>
+        <h4><strong>📆 20/10/2023 VISTO NO CADERNO DE GEOGRAFIA</strong></h4>
         <h5>📒 Individual</strong></h5>
         <br>
+        <h5><strong>🔍PERGUNTAS QUE DEVE TER EM SEU CADERNO:</strong></h5>
+        <br>
+        <h5><strong>1- LISTA DE EXERCÍCIO!</strong></h5>
+        <br>
+        <h5><strong>Questão 01.</strong></h5>
+        <h6>A Santa Sé, que fica dentro da cidade de Roma e tem como chefe de Estado o Papa Francisco, tem cerca de 1.000 habitantes, que vivem em apenas 0,44 km². E ele não é apenas o menor e menos populoso: é um dos menos povoados. Qual é sua densidade populacional?</h6>
+        
+        <h5><strong>Questão 02.</strong></h5>
+        <h6>Em uma cidade, onde habitam 200 mil pessoas, houve em um ano uma incidência de 2750 nascimentos, além de 1830 óbitos. Calcule as taxas de natalidade, mortalidade e crescimento vegetativo.</h6>
+        
+        <h5><strong>Questão 03.</strong></h5>
+        <h6>Em uma cidade, onde habitam 100 mil pessoas, houve em um ano 1560 nascimentos, além de 1300 óbitos. Calcule as taxas de natalidade, mortalidade e crescimento vegetativo.</h6>
+        
+        <h5><strong>Questão 04.</strong></h5>
+        <h6>Uma cidade possui 1000 habitantes, e em um ano houve 30 nascimentos e 13 falecimentos, determine o crescimento vegetativo.</h6>
+        
+        <h5><strong>Questão 05.</strong></h5>
+        <h6>Calcule o crescimento vegetativo de uma cidade que registrou em 2009 uma Tn (taxa de natalidade) de 58 ‰ e uma Tm (taxa de mortalidade) de 13 ‰.</h6>
+        
+        <h5><strong>Questão 06.</strong></h5>
+        <h6>Cerca de 20.000.000 de brasileiros vivem na região coberta pela caatinga, em quase 800.000 km² de área. Quando não chove, o homem do sertão e sua família precisam caminhar quilômetros em busca da água dos açudes. A irregularidade climática é um dos fatores que mais interferem na vida do sertanejo. Segundo esse levantamento, a densidade demográfica da região coberta pela caatinga, em habitantes por km², é de:</h6>
+        
+        <h5><strong>Questão 07.</strong></h5>
+        <h6>Cite os números da população absoluta e população relativa do Brasil.</h6>
+        
+        <h5><strong>Questão 08.</strong></h5>
+        <h6>População total do país: 1.300.000 habitantes, houve nascimentos em um ano de 10.000 determine a Taxa de natalidade:</h6>
+        
+        <h5><strong>Questão 09.</strong></h5>
+        <h6>Considerando a tabela, faça uma lista, em ordem crescente, dos países populosos e dos países povoados.</h6>
+        
+        
+        <div>
+          <img id="myImg" src="../img/tabelageo.png" alt="Imagem" width="200" height="auto">
+
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+          </div>
+                
+        <br><br>
+        <h5><strong>2- PIRÂMIDE ETÁRIA DA ÍNDIA DE GEOGRAFIA </strong></h5>
         <h5>✅ Critérios: <h5>
 
         <h6>A postura desenvoltura durante a organização do material será avaliada. Qualidade da apresentação do trabalho final e materiais pesquisados será avaliada. Realizar as atividades de forma adequada. Demonstrar interesse e compromisso pelo trabalho; ter uma participação ativa.</h6>
@@ -228,7 +305,7 @@
         </a>
         </p>
         <h6 id="downloadMessage"></h6>
-        <br>
+        
       </div>
       
       <div>
@@ -360,6 +437,34 @@
         document.getElementById('downloadMessage').textContent = '⬇️ O download está em andamento...';
     });
     </script>
+    <img id="myImg" src="../img/simulado.png" alt="Imagem" width="200" height="auto">
+
+    <div id="myModal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="img01">
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+    
 
   <footer class="footer">
     <div class="footer-content">
