@@ -1,17 +1,649 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)https://updatefaker.com/windows11/index.html -->
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles.css">
+    <title>Tarefas Vencidas</title>
+    <link rel="icon" href="../img/yay.png" type="../img/yay.png">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
 
-  <div class="container-fluid">
-      <a class="navbar-brand" href="../../index.html">
-          <img src="../img/bing.png" alt="Logo" width="auto" height="31" class="d-inline-block align-text-top me-2">
-          <strong style="font-weight: bold;">Portal Bing</strong>
-      </a>
+    
+    <style>
+      .navbar-custom {
+        background: linear-gradient(to right, rgba(157, 176, 240, 0.986), rgba(23, 9, 54, 0.863), rgba(26, 13, 71, 0.856), rgb(255, 255, 255));
+     }
+      body {
+        background-image: url(../img/chuva.jpg);
+        background-size:cover;
+      }
+      h1{
+        color:rgb(255, 255, 255);
+      }
+      p{
+        color:rgb(255, 255, 255);
+      }
+      h3{
+        color:rgb(255, 255, 255);
+      }
+      h4{
+        color:rgb(255, 255, 255);
+      }
+      h5{
+        color:rgb(255, 255, 255);
+      }
+      h6{
+        color:rgb(255, 255, 255);
+      }
+      h10{
+        color:rgb(255, 255, 255);
+      }
+      ul{
+        color:rgb(255, 255, 255);
+      }
+      .navbar-brand {
+        color: white;
+        font-family: 'Comic Sans MS', cursive, bo;
+        }
+        img[src='img/lab.png'] {
+         border: 5px solid white;
+        }
+
+        footer{
+          background-color:rgb(70, 70, 70);
+        }
+        .footer .text-muted {
+        color: white;
+        }
+        
+        .nav-link {
+         color: rgb(255, 0, 0);
+        }
+        .navbar-brand {
+        color: rgb(255, 255, 255);
+        font-family: 'Comic Sans MS', cursive, bo;
+        }
+        .nav-link {
+         color: rgb(255, 255, 255);
+           font-family: "Comic Sans MS";
+        }
+        .offcanvas-title{
+          color: rgb(255, 255, 255);
+        }
+        .nav-link-custom {
+        color: white;
+        }
+        
+        .offcanvas {
+        background-color: rgba(26, 26, 26, 0.144);
+        backdrop-filter: blur(10px);
+        }
+        .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    .footer {
+      margin-top:70%;
+        padding: 13px 0;
+        background: transparent;
+        backdrop-filter: blur(80px);
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-nav .nav-link {
+        color: white;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+   .navbar-nav .nav-link:hover {
+       color: #888;
+      background-color: transparent;
+    }
+
+    .navbar-nav .nav-link:active {
+       background-color: #888;
+       color: white;
+    }
+
+    .navbar-brand {
+        color: white;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    .navbar-brand:hover {
+       color: #bcf5ff;
+       background-color: transparent;
+     }
+
+    .navbar-brand:active {
+        background-color: #d6f0ffb2;
+        color: white;
+    }
+    </style>
 
 
-  </div>
+  </head>
+  
+  <nav class="navbar navbar-custom fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../img/bing.png" alt="Logo" width="auto" height="31" class="d-inline-block align-text-top me-2">
+            <strong style="font-weight: bold;">Portal Bing</strong>
+        </a>
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./UpdateFaker - Updating Windows 11_files/analytics.js.baixados"></script><script type="text/javascript" async="" src="./UpdateFaker - Updating Windows 11_files/js"></script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('/detroitchicago/boise.js','/detroitchicago/boise.js?gcb=195-0&cb=2',true,[],true,false,true,false);__ez.queue.addFile('/parsonsmaize/abilene.js','/parsonsmaize/abilene.js?gcb=195-0&cb=30',true,[],true,false,true,false);</script><script src="./UpdateFaker - Updating Windows 11_files/boise.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/abilene.js.baixados" async=""></script><script data-ezscrex="false" data-cfasync="false">__ez.ssaf=[17,19,16];__ez.sswp=4;__ez.ssv=210629;__ez.sshsdef=false;</script><script data-ezscrex="false" data-cfasync="false">__ez.queue.addFile('/tardisrocinante/screx.js','/tardisrocinante/screx.js?gcb=0&cb=4',false,['/detroitchicago/tulsa.js'],true,false,true,false);</script><script data-ezscrex="false" data-cfasync="false">(function(){if("function"===typeof window.CustomEvent)return!1;window.CustomEvent=function(c,a){a=a||{bubbles:!1,cancelable:!1,detail:null};var b=document.createEvent("CustomEvent");b.initCustomEvent(c,a.bubbles,a.cancelable,a.detail);return b}})();</script><script data-ezscrex="false" data-cfasync="false">__ez.queue.addFile('/detroitchicago/tulsa.js','/detroitchicago/tulsa.js?gcb=195-0&cb=8',false,[],true,false,true,false);</script><script src="./UpdateFaker - Updating Windows 11_files/tulsa.js.baixados" async=""></script><script data-ezscrex="false" data-cfasync="false">window._ezaq=Object.assign({},typeof window._ezaq!=="undefined"?window._ezaq:{},{"ad_cache_level":1,"domain_id":310251,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":1,"lt_cache_level":0,"page_view_id":"869c788f-e7b0-4e94-712f-a644dcf86463","response_size_orig":2010,"response_time_orig":9,"template_id":131,"url":"https://updatefaker.com/windows11/index.html","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script><link rel="preconnect" href="https://code.jquery.com/" crossorigin=""><link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin=""><link rel="preconnect" href="https://go.ezoic.net/" crossorigin=""><style class="ezcritcss">body{background:#000;margin:0;padding:0;text-align:center;font-family:Segoe UI Light,Segoe UI,Arial;font-size:22px;color:#fff;font-weight:600}.mainholder{display:block;position:absolute;min-width:100%;min-height:100%;margin:0;padding:0}.main{width:500px;margin:0 auto}.content{position:absolute;top:50%;height:70px;margin-left:auto;margin-right:auto;display:block;width:500px;margin-top:-5%}.spinnerloading{position:relative;width:50px;margin:auto;padding-top:2px}.spinnerloading .dots{position:absolute;width:48px;height:48px;opacity:0;transform:rotate(225deg);animation-iteration-count:infinite;animation-name:roundspin;animation-duration:5.5s}.spinnerloading .dots:after{content:'';position:absolute;width:6px;height:6px;border-radius:5px;background:#fff}.spinnerloading .dots:nth-child(2){animation-delay:240ms}.spinnerloading .dots:nth-child(3){animation-delay:480ms}.spinnerloading .dots:nth-child(4){animation-delay:720ms}.spinnerloading .dots:nth-child(5){animation-delay:960ms}@keyframes roundspin{0%{transform:rotate(225deg);opacity:1;animation-timing-function:ease-out}7%{transform:rotate(345deg);animation-timing-function:linear}30%{transform:rotate(455deg);animation-timing-function:ease-in-out}39%{transform:rotate(690deg);animation-timing-function:linear}70%{transform:rotate(815deg);opacity:1;animation-timing-function:ease-out}75%{transform:rotate(945deg);animation-timing-function:ease-out}76%{transform:rotate(945deg);opacity:0}to{transform:rotate(945deg);opacity:0}}</style><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">__ez.queue.addFile('/parsonsmaize/mulvane.js','/parsonsmaize/mulvane.js?gcb=195-0&cb=5',true,['/parsonsmaize/abilene.js'],true,false,true,false);__ez.queue.addFile('/parsonsmaize/olathe.js','/parsonsmaize/olathe.js?gcb=195-0&cb=23',false,['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'],true,false,true,false);__ez.queue.addFile('/porpoiseant/et.js','/porpoiseant/et.js?gcb=195-0&cb=2',false,[],true,false,true,false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script src="./UpdateFaker - Updating Windows 11_files/et.js.baixados" async=""></script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,_,n,r,a,s){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===s&&(s=!1);var p=parseInt(__ez.dot.getTargeting(t,"ap")),f=__ez.dot.getSlotIID(t),u=__ez.dot.getAdUnit(t,s),z=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,c=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("/").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("/").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(c=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(f,u)&&__ez.dot.isValid(o)&&("0"===f&&!0!==s||""===u||i.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:u,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:_,ad_position:p,ad_size:"",bid_floor_filled:n,bid_floor_prev:r,stat_source_id:a,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:z,line_item_id:g,creative_id:c,data:__ez.dot.dataToStr(o),is_orig:s||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("/porpoiseant/army.gif")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var _=e.split("/");if(__ez.dot.isDefined(e)&&3===_.length&&__ez.dot.isValid(t)){var n=_[0],r={type:"impression",impression_id:_[2],domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('/detroitchicago/raleigh.js','/detroitchicago/raleigh.js?gcb=195-0&cb=6',false,['/parsonsmaize/abilene.js'],true,false,true,false);__ez.queue.addFile('/detroitchicago/vista.js','/detroitchicago/vista.js?gcb=195-0&cb=5',false,['/parsonsmaize/abilene.js'],true,false,true,false);__ez.queue.addFile('/detroitchicago/tampa.js','/detroitchicago/tampa.js?gcb=195-0&cb=5',false,['/parsonsmaize/abilene.js'],true,false,true,false);</script><!--<base href="https://updatefaker.com/windows11/index.html">--><base href="."><title>UpdateFaker - Updating Windows 11</title><meta name="robots" content="index, follow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google" content="notranslate"><meta property="og:image" content="og.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="627"><meta property="og:title" content="Update Faker"><meta property="og:url" content="updatefaker.com"><script src="./UpdateFaker - Updating Windows 11_files/jquery-latest.js.baixados" ez-screx="true"></script><script src="./UpdateFaker - Updating Windows 11_files/translations.js.baixados" ez-screx="true"></script><script src="./UpdateFaker - Updating Windows 11_files/disablerightclick.js.baixados" ez-screx="true"></script><script src="./UpdateFaker - Updating Windows 11_files/bluescreen.js.baixados" ez-screx="true"></script><script src="./UpdateFaker - Updating Windows 11_files/percentagecounter.js.baixados" ez-screx="true"></script><script async="" src="./UpdateFaker - Updating Windows 11_files/js(1)"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-49179701-9');</script><link rel="stylesheet" href="./UpdateFaker - Updating Windows 11_files/style.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;"><noscript><link rel=stylesheet href="style.css?ff=1&amp;wps=false&amp;ez_used_css_s=1172"></noscript><link rel="canonical" href="https://updatefaker.com/windows11/index.html"><script>var ezoTemplate='old_site_excl';var ezouid='1';var ezoFormfactor='1';</script><script data-ezscrex="false">var soc_app_id='0';var did=310251;var ezdomain='updatefaker.com';var ezoicSearchable=1;</script><script data-ezscrex="false" data-cfasync="false">var _ezaq=window._ezaq=Object.assign({},typeof window._ezaq!=="undefined"?window._ezaq:{},{"ab_test_id":"mod17-c","ad_cache_level":1,"ad_lazyload_version":0,"ad_load_version":0,"city":"Guarapuava","country":"BR","days_since_last_visit":-1,"domain_id":310251,"domain_test_group":20230810,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":1,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":1,"page_view_id":"869c788f-e7b0-4e94-712f-a644dcf86463","position_selection_id":0,"postal_code":"85000","pv_event_count":0,"response_size_orig":2010,"response_time_orig":9,"serverid":"i-045c63cbf8ebf4ede","state":"PR","t_epoch":1698716372,"template_id":131,"time_on_site_visit":0,"url":"https://updatefaker.com/windows11/index.html","weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":8,"worst_bad_word_level":0});var _ezExtraQueries="&ez_orig=1";</script><script data-ezscrex="false" data-pagespeed-no-defer="" data-cfasync="false">function create_ezolpl(){var d=new Date();d.setTime(d.getTime()+(365*24*60*60*1000));var expires="expires="+d.toUTCString();__ez.ck.setByCat("ezux_lpl_310251="+new Date().getTime()+"|"+_ezaq.page_view_id+"|"+_ezaq.is_return_visitor+"; "+expires,3);}
-function attach_ezolpl(){if(document.readyState==="complete"){create_ezolpl();return;}
-window.addEventListener("load",create_ezolpl);}
-__ez.queue.addFunc("attach_ezolpl","attach_ezolpl",null,false,['/detroitchicago/boise.js'],true,false,false,false);</script><script src="./UpdateFaker - Updating Windows 11_files/css_onload.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/drake.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/jellyfish.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/mulvane.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/olathe.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/raleigh.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/vista.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/tampa.js.baixados" async=""></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./UpdateFaker - Updating Windows 11_files/screx.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/vitals.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/script_delay.js.baixados" async=""></script><script src="./UpdateFaker - Updating Windows 11_files/audins.js.baixados" async="" type="text/javascript"></script></head><body><div class="mainholder"><div class="main"><div class="content"><div class="update"><div class="spinnerloading"><div class="dots"></div><div class="dots"></div><div class="dots"></div><div class="dots"></div><div class="dots"></div></div><br><br><a id="textkind" data-translate="lang_win11youare">Trabalhando em Atualizações!</a>  <span data-translate="lang_win11there"></span><br><span data-translate="lang_win11please">🔧 Por favor Aguarde o Alexandre atualizar o SITE! </span></div></div></div></div><script data-cfasync="false">!function(){var e=function(e,t){for(var r=0;r<t.length;r++){var n=t[r];if(0==n.complete||void 0!==n.readyState&&n.readyState<4){var o=n.getAttribute("src")||n.currentSrc;void 0!==n.readyState&&0==n.readyState?n.addEventListener("loadstart",(function(e){var t=e.currentTarget.getAttribute("src")||e.currentSrc;window.ezorqs(e,t)})):(o=n.getAttribute("src")||n.currentSrc,window.ezorqs(n,o)),n.addEventListener("load",(function(e){var t=e.currentTarget.getAttribute("src")||e.srcElement.currentSrc;window.ezorqe(e,t)})),n.addEventListener("loadeddata",(function(e){var t=e.currentTarget.getAttribute("src")||e.srcElement.currentSrc;window.ezorqe(e,t)})),n.addEventListener("error",(function(e){var t=e.currentTarget.getAttribute("src")||e.srcElement.currentSrc;window.ezorqe(e,t)}))}}};function t(e){for(var t=0;t<document.styleSheets.length;t++)if(document.styleSheets[t].href==e)return!0;return!1}__ez_addAllListeners=function(){e(0,document.querySelectorAll("img")),e(0,document.querySelectorAll("video")),e(0,document.querySelectorAll("audio")),function(e){for(var r=0;r<e.length;r++){var n=e[r];if(("preload"==n.getAttribute("rel")||"stylesheet"==n.getAttribute("rel"))&&null!=n.getAttribute("href")&&t(n.getAttribute("href"))){window.ezorqs(n,n.getAttribute("href"));var o=document.createElement("img");o.onerror=function(e){void 0!==e.path&&void 0!==e.path[0].currentSrc?window.ezorqe(n,e.path[0].currentSrc):void 0!==e.srcElement&&void 0!==e.srcElement.href&&window.ezorqe(n,e.srcElement.href)},o.src=n.getAttribute("href")}}}(document.querySelectorAll("link")),void 0!==window.__ez.ssaf&&window.__ez.ssaf.indexOf(16)>-1&&void 0!==window.__ez.sshsdef&&!1===window.__ez.sshsdef&&Element.prototype.addEventListener&&("function"==typeof window.onload&&(window.addEventListener("load",window.onload),window.onload=null),"function"==typeof document.onload&&(document.addEventListener.addEventListener("load",document.onload),document.onload=null))},__ez.queue.addFunc("__ez_addAllListeners","__ez_addAllListeners",null,!1,["/detroitchicago/tulsa.js"],!0,!0,!0,!0)}();</script><script>__ez.queue.addFile('/tardisrocinante/css_onload.js','/tardisrocinante/css_onload.js?gcb=0&cb=1',false,[],true,false,true,false);</script><script data-cfasync="false">__ez.queue.addFile('/tardisrocinante/script_delay.js','/tardisrocinante/script_delay.js?gcb=0&cb=2',false,['/tardisrocinante/screx.js'],true,false,true,false);</script><script>__ez.queue.addFile('/tardisrocinante/vitals.js','/tardisrocinante/vitals.js?gcb=0&cb=3',false,['/parsonsmaize/mulvane.js'],true,false,true,false);</script><script>var _audins_dom="updatefaker_com",_audins_did=310251;__ez.queue.addDelayFunc("audins.js","__ez.script.add","//go.ezodn.com/detroitchicago/audins.js?cb=195-0");</script><noscript><div style=display:none><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.updatefaker_com,DomainId.310251" border=0 height=1 width=1 alt=Quantcast></div></noscript><script>__ez.queue.addFile('/beardeddragon/drake.js','/beardeddragon/drake.js?gcb=0&cb=4',false,[],true,false,true,false);</script><script style="display:none">var __ez_dims=(function(){var setCookie=function(name,content,expiry){return document.cookie=name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';};var ffid=1;var oh=window.screen.height;var ow=window.screen.width;var h=ffid===1?oh:(oh>ow)?oh:ow;var w=ffid===1?ow:(oh>ow)?ow:oh;var uh=window.innerHeight||document.documentElement.clientHeight||document.getElementsByTagName('body')[0].clientHeight;var uw=window.innerWidth||document.documentElement.clientWidth||document.getElementsByTagName('body')[0].clientWidth;setCookie('ezds',encodeURIComponent('ffid='+ffid+',w='+w+',h='+h),(31536e3*7));setCookie('ezohw',encodeURIComponent('w='+uw+',h='+uh),(31536e3*7));})();</script><script style="display:none" async="">__ez.queue.addFile('/parsonsmaize/chanute.js','/parsonsmaize/chanute.js?a=a&cb=7&dcb=195-0&shcb=34',true,['/parsonsmaize/mulvane.js'],true,false,false,false);</script><script style="display:none" async="">__ez.queue.addFile('/porpoiseant/jellyfish.js','/porpoiseant/jellyfish.js?a=a&cb=11&dcb=195-0&shcb=34',false,[],true,false,false,false);</script></body></html>
+        <div class="d-flex align-items-center">
+          <img src="../img/sesi.png" width="auto" height="40" class="me-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mais opções</h5>
+          <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <h6><strong>Organização</strong></h6>
+            <li class="nav-item">
+              <a class="nav-link" href="aulas.html">🕝 Cronograma de Aulas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calendario.html">📅 Calendário</a>
+            </li>
+            <br><h6><strong> Tarefas e Trabalhos</strong></h6>
+            <li class="nav-item">
+              <a class="nav-link" href="finalizacao.html">📂 Finalização</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tarefas.html">📝 Tarefas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Tarefasvencidas.html">❌ Tarefas Vencidas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabalhoseq.html">📰 Trabalhos em Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prova.html">📄 Provas</a>
+            </li>
+            <br><h6><strong> Ajuda </strong></h6>
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">🗂️ Informações do Site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">⬅️ Voltar para o Inicío</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <body>
+
+    <div class="container container-fluid">
+      <div class="text-center">
+        
+          <br><br><br><br>
+          <h1>❌ Tarefas Vencidas da Sala 1!</h1>
+          <p>Oficina: Conversando com IA</p>
+      </div>
+
+
+          <div class="col-md-12">
+              <br>
+              <h3><strong>❌ Tarefas Vencidas:</strong></h3>
+              <br>
+          </div>
+          
+          <table border="1" style="width: 100%;">
+            <tr>
+                <th colspan="2" style="text-align: center;">
+                    <h5><strong>📝 Aqui as Tarefas que já Venceram..</strong></h5>
+                </th>
+            </tr>
+        </table>
+        
+        <!-- TAREFAS DO COLÉGIO-->
+        <table border="1" style="width: 100%;">
+            <tr>
+                <td colspan="2" style="padding: 30px;">
+                  <!-- AQUI AS TAREFAS MESMO =P-->
+
+                  <ciap style="text-align:justify";>
+                    <h5>💻CIÊNCIAS APLICADAS:</h5>
+                    <h4><strong>📆 30/10/2023 Relatório sobre responsabilidade social de uma empresa.</strong></h4>
+                    <h5>📒 Individual, Ciências Aplicadas</h5>
+                    <br>
+                    <h4>✅Instruções:</h4>
+                    <h6>Sobre a empresa e ações de responsabilidade social adotada. Identifique os impactos e crie sugestões de acordo com o tema de responsabilidade social.</h6>
+                  </ciap>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <oftec style="text-align: justify;">
+                    <h5>🧩OFTEC</h5>
+                    <h4><strong>📆 24/10/2023 Gerador de ondas - of. tec.</strong></h4>
+                    <h5>📒Digitado, e enviar no Teams <strong>(25 pontos)</strong></h5>
+                    <br>
+                    <h6><strong>📄Baixar a Pesquisa:</strong></h6><p></p>
+                    <a href="../doc/Gerador de Ondas - Prática Lego.docx" download>
+                      <button type="button" type="button" class="btn btn-primary" >Baixar a Pesquisa</button>
+                    </a>
+                    </p>
+                    <h6 id="downloadMessage"></h6>
+                    <br>
+                  </oftec>
+                  
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <OFTEC style="text-align: justify;">
+                    <h5>🧩OFTEC</h5>
+                    <h4><strong>📆 11/10/2023 Curso Foco na Carreira ENSINO MÈDIO</strong></h4>
+                    <h5>📒Ensino Médio,  <strong>(25 pontos)</strong></h5>
+                    <h5>⚠️ Após realizar, enviar para Joseane no Teams!💻</h5>
+                    <br>
+                    <h6>Instruções:</h6>
+                    <h6>1- Realizar o curso disponível no link: <a href="https://bit.ly/foconacarreira2023">https://bit.ly/foconacarreira2023</a></h6>
+                    <h6>2- Tirar um print de conclusão do curso;</h6>
+                    <h6>3- Anexar o print na tarefa.</h6>
+                  </OFTEC>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <letrus style="text-align: justify;">
+                    <h5>📖 PRODUÇÃO TEXTUAL:</h5>
+                    <h4><strong>📆 13/10/2023 Atividade do Letrus</strong></h4>
+                    <br> <h6> - A atividade abre dia 04/10/2023</h6>
+                    <h6> - Fazer a redação no site.</h6>
+                  </letrus>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <portugues style="text-align: justify;">
+                    <h5>📒 PORTUGUÊS:</h5>
+                    <h4><strong>📆 09/10/2023 Pesquisa preliminar de Português Gramatica</strong></h4>
+                    <h5>⚠️Em mapa conceitual! <br>📒Manuscrito, <strong>(25 pontos)</strong></h5>
+                    <br>
+                    <h6>Sintaxe:</h6>
+                    <h6>- Frase</h6>
+                    <h6>- Oração</h6>
+                    <h6>- Períodos Simples e Composto</h6>
+                    <h6>- Termos da Oração</h6>
+                    <h6>- Sujeito - Tipos de Sujeito</h6>
+                    <h6>- Predicado Verbal / Nominal</h6>
+                  </portugues>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+                  
+                  <ingles style="text-align: justify;">
+                    <h5>🗽 INGLÊS:</h5>
+                    <h4><strong>📆 04/10/2023 Atividade de Inglês</strong></h4>
+                    <h5>⚠️ Levar fone de Ouvido!🎧</h5>
+                    <br>
+                    <h6> A atividade será feita no computador.</h6>
+                  </ingles>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <ingles style="text-align: justify;">
+                  <h5>🗽 INGLÊS:</h5>
+                  <h4><strong>📆 06/10/2023 Drawing a Cartoon</strong></h4>
+                  <h5>📒Manuscrita,  <strong>(50 pontos)</strong></h5>
+                  <h5>⚠️ Trabalho interdisciplinar - Português e Inglês</h5>
+                  <br>
+                  <h6>Instruções:</h6>
+                  <h6>1- Desenhar um cartoon relacionado ao uso das tecnologias, inteligência artificial, vício as redes sociais e/ou mau uso da internet;</h6>
+                  <h6>2- O cartoon pode ser irônico, crítico ou satírico;</h6>
+                  <h6>3- O cartoon deve conter uma legenda, um diálogo ou alguma frase escrita em inglês;</h6>
+                  <h6>4- Vocês também devem escrever em português um parágrafo explicando e argumentando sobre a crítica feita no cartoon.</h6>
+                  </ingles>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <oftec style="text-align: justify;">
+                  <h5>🧩OFTEC:</h5>
+                  <h4><strong>📆 03/10/2023 Programação - Open Roberta Lab</strong></h4>
+                  <h5>📒Digital, mandar foto ou video da programação no teams</h5>
+                  <br>
+                  <h4><strong>📄Baixar a Tarefa:</strong></h4><p></p>
+                  <a href="../doc/Aula 1 - Carro Programável _ Aluno (1).pdf" download>
+                    <button type="button" class="btn btn-primary" id="downloadLink">Baixar a Pesquisa</button>
+                  </a>
+                  <p id="downloadMessage"></p>
+                  </oftec>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <letrus style="text-align: justify;">
+                  <h5>📖 PRODUÇÃO TEXTUAL:</h5>
+                  <h4><strong>📆 29/09/2023 Atividade do Letrus</strong></h4>
+                  </letrus>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <geografia style="text-align: justify;">
+                  <h5>🌎 GEOGRAFIA:</h5>
+                  <h4><strong>📆 29/09/2023 Preliminar de Geografia</strong></h4>
+                  <h5>📒Manuscrita,  <strong>(50 pontos)</strong></h5>
+                  <h5>⚠️ Fazer a capa Padronizada</h5>
+                  <h5>📖 Utilizar livro ( 1 Questão)</h5>
+                  <br>
+                  <h6>1- Demografia; população absoluta; população relativa; Crescimento vegetativo;
+                  Taxa de natalidade
+                  <h6> Taxa de mortalidade; Teorias Demograficas ( 4 : Matuseana, neomatusiana, reformista, ecomatusiana ); Distribuição da população mundial;</h6>
+              
+                  <h6>2- Pirâmides Etárias : Diferentes formatos e seu significado.</h6>
+              
+                  <h6>3- Transição demográfica : diferentes fases.</h6>
+              
+                  <h6>4- Migração; Imigrantes; Emigrante;</h6>
+              
+                  <h6>5- Migração Mundial: Área de ecúmeno e crise migratória.</h6>
+              
+                  <h6>6- Terrorismo; RAcismo; Xenofobia.</h6>
+              
+                  <h6>7- Conflitos separatistas: causas, Consequências, exemplos.</h6>
+                  </geografia>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <ingles style="text-align: justify;">
+                  <h5>🗽 INGLÊS:</h5>
+                  <h4><strong>📆 29/09/2023 Pesquisa Preliminar de inglês</strong></h4>
+                  <h5>📒Manuscrito,  <strong>(25 pontos)</strong></h5>
+                  <h5>⚠️Lembrem da importância da organização dos tópicos, capricho e principalmente letra legível.</h5>
+                  <br>
+                  <h6>Topics to research about:</h6>
+                  <br>
+                  <h6>Slangs and Colloquialism</h6>
+                  <h6>1. Explicar a diferença entre slangs e colloquialism;</h6>
+                  <h6>2. Escrever dez exemplos de slangs;</h6>
+                  <h6>3. Escrever dez exemplos de colloquialism.</h6>
+                  <br>
+                  <h6>Passive voice</h6>
+                  <h6>1. Explicar o uso da voz passiva e suas regras gramaticais;</h6>
+                  <h6>2. Escrever um exemplo para cada tempo verbal que possa ser utilizado.</h6>
+                  <br>
+                  <h6>Verbal Language, Nonverbal Language, Body Language, Textspeak</h6>
+                  <h6>1. Explicar a utilização de cada tipo de linguagem;</h6>
+                  <h6>2. Exemplificar todos eles;</h6>
+                  <h6>3. Escrever dez exemplos de textspeak.</h6>
+                  <br>
+                  <h6>Phrasal Verbs</h6>
+              
+                  <h6>1. Explicar definição e uso dos phrasal verbs;</h6>
+                  <h6>2. Escrever dez exemplos de phrasal verbs utilizados em contextos formais e dez 
+                  utilizados em contextos informais.</h6>
+                  <br>
+                  <h6>Affixes</h6>
+              
+                  <h6>1. Explicar o que são Prefixes, Suffixes and Circumfixes; </li>
+                  <h6>2. Escrever dez exemplos de cada um com a tradução</li>
+                  </ingles>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <quimica style="text-align: justify;">
+                  <h5>⚗️ QUÍMICA:</h5>
+                  <h4><strong>📆 28/09/2023 Pesquisa preliminar de Química</strong></h4>
+                  <h5>📒Manuscrita, ou Digitada <strong>(50 pontos)</strong></h5>
+                  <br>
+                  <h6>1- O que a Química Orgânica estuda?</h6>
+                  <h6>2- Descreva os prefixos da Química orgânica</h6>
+                  <div style="display: flex; flex-wrap: wrap;">
+                      <div style="flex: 1;">
+                          <h6>a) álcool</h6>
+                          <h6>b) fenol</h6>
+                          <h6>c) aldeído</h6>
+                          <h6>d) cetona</h6>
+                          <h6>e) ácido carboxílico</h6>
+                          <h6>f) éster</h6>
+                      </div>
+                      <div style="flex: 1;">
+                          <h6>g) éter</h6>
+                          <h6>h) haleto</h6>
+                          <h6>i) anidrido</h6>
+                          <h6>j) sal orgânico</h6>
+                          <h6>k) amida</h6>
+                          <h6>l) amina</h6>
+                      </div>
+                      
+                  </div>
+                       <br>
+                      <h6>3- Classificação dos álcoois</h6>
+                      <h6>4- Explique as propriedades dos compostos orgânicos: solubilidade, densidade, temperaturas de fusão e ebulição, acidez e basicida.</h6>
+                  </quimica>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <matematica style="text-align: justify;">
+                  <h5>🧮 MATEMÁTICA:</h5>
+                  <h4><strong>📆 Mapa Conceitual de Matemática</strong></h4>
+                  <h5>📒Entrega: 27/09/2023 <strong> (25 pontos)</strong><p>📒Data final: 04/10/2023 <strong> (10 pontos)</strong></p></h5>
+                  <p><strong>(Manuscrito, com desenhos e fórmulas)</strong></p>
+                  <p><strong>⚠️OBS! Obrigatório pelo menos 1 livro!</strong></p>
+                  <BR>
+                  <h6> 1) Arcos e ângulos.</h6> 
+                  <h6> 2) Unidades de medidas para ângulos.</h6> 
+                  <h6> 3) Relação entre grau e radiano.</h6> 
+                  <h6> 4) Comprimento de arco.</h6> 
+                  <h6> 5) Ciclo trigonométrico.</h6> 
+                  <h6> 6) Seno, cosseno e tangente no ciclo trigonométrico.</h6> 
+                  <h6> 7) Relações trigonométricas.</h6> 
+                  <h6> 8) Redução de um ângulo ao primeiro quadrante.</h6> 
+                  </matematica>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <fisica style="text-align: justify;">
+                  <h5> ⚛️FÍSICA:</h5>
+                  <h4><strong>📆 27/09/2023 Pesquisa preliminar de Física segmento 9</strong></h4>
+                  <h5>📒Pode Ser Digitada! <strong>(50 pontos)</strong><p></p>
+                  <br>
+                  <h6>1. O que é uma onda?</h6>
+                  <h6>2. Quais as 3 classificações das ondas? Explique e exemplifique as, de acordo com a direção de propagação, meio de propagação e forma de propagação.</h6>
+                  <h6>3. Explique os elementos que compõe uma onda. (todos os 6 elementos).</h6>
+                  <h6>4. Descreva os fenômenos de ondas: reflexão, refração e polarização.</h6>
+                  <h6>5. Explique a interferência de ondas.</h6>
+                  <h6>6. Determine a equação fundamental das ondas, com a discriminação de variáveis e unidades.</h6>
+                  <h6>7. Diferencie infrassons e ultrassons.</h6>
+                  <h6>8. Explique a frequência sonora humana audível.</h6>
+                  <br>
+                  <h6>9. Como ocorrem os fenômenos acústicos de:</h6>
+                  <ul>
+                    <h6>a) Timbre.</h6>
+                    <h6>b) Eco;</h6>
+                    <h6>c) Reverberação;</h6>
+                    <h6>d) Nível sonoro;</h6>
+                    <h6>e) Intensidade sonora;</h6>
+                    <h6>f) Altura do som;</h6>
+                    <h6>g) Ressonância;</h6>
+                    <h6>h) Efeito doppler;</h6>
+                  </ul>
+                  <br>
+                  <h6>10. Explique e informe a velocidade do som.</h6>
+                  <h6>11. Equação e exemplos de cálculo com variáveis e unidades de eco, nível sonoro e efeito Doppler.</h6>
+                  <h6>12. Como funcionam os tubos sonoros?</h6>
+                  <h6>13. O que são e equação das ondas estacionárias, com um exemplo de cálculo.</h6>
+                  <h6>14. Comparar física clássica e moderna.</h6>
+                  <h6>15. Explique a dualidade onda partícula</h6>
+                  <h6>16. Explique a teoria da relatividade</h6>
+                  <h6>17. Explique o princípio da incerteza.</h6>
+                  <h6>18. Explique os postulados de Einstein e a famosa equação da energia do mesmo.</h6>
+                  </fisica>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <oftec style="text-align: justify;">
+                  <h5>🧩 OFTEC:</h5>
+                  <strong>📆 26/09/2023 Pesquisa Preliminar de Oficinas Tecnologicas</strong></h4>
+                  <h5>Prática lego – Gramofone</h5>
+                  <p><strong>(Digitado)</strong></p>
+                  <a href="../doc/Gramofone.docx" id="downloadLink">
+                      <button type="button" type="button" class="btn btn-primary">Baixar a Pesquisa</button>
+                  </a>
+                  <p id="downloadMessage"></p>
+                  </oftec>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <ciap style="text-align: justify;">
+                  <h5>💻CIÊNCIAS APLICADAS:</h5>
+                  <h4><strong>📆  Pesquisa Preliminar de Ciap</strong></h4>
+                  <h5> 🔍Pergunta 1, 2 Data: 11/09<p>🔍Pergunta 3, 4 Data: 25/09</p></h5>
+                  <p>1- pesquise sobre a evolução tecnológica e quais impactos nas relações sociais.
+                  <br>2- Constatar os diferentes instrumentos tecnológicos seus usos e impactos.
+                  <br>3- Estrutura de equipamentos tecnológicos atuais e os obsoleto. (Escolher 1 equipamento).
+                  <br>4- Responsabilidade Social.</p>
+                  </ciap>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <oftec style="text-align: justify;">
+                  <h5>🧩 OFTEC:</h5>
+                  <h4><strong>📆26/09/2023 Relatorio de OF Tec</strong></h4>
+                  <h5>🔍Tema: Gramafone </h5>
+                  <br>
+                  <p>- Componentes da equipe e suas funções
+                  <br>1- Como modificar a velocidade de rotação do disco?
+                  <br>2- Como podemos amplificar o som?
+                  <br>3- A qualidade do som depende da velocidade de rotação?
+                  <br>Comente características do som produzido.</p>
+                  </oftec>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <portugues style="text-align: justify;">
+                  <h5>📒 PORTUGUÊS:</h5>
+                  <h4><strong>📆 21/09/2023 Pesquisa Preliminar de Português</strong></h4>
+                  <h5>🔍 Geração de 45 - 3ºGeração (1945 - 1980)</h5>
+                  <p>
+                      <h6> - Contexto Histórico <strong>(Aprofundado)</strong>
+                      <br> - Características.
+                      <br> - Obras e autores.
+                      <br> - Poesia Marginal.
+                      <br> - Tropicalismo.
+                      </h6>
+                  </p>
+                  </portugues>
+                  
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <artes style="text-align: justify;">
+                  <h5>🎨 ARTES:</h5>
+                  <h4><strong>📆 21/09/2023 Pesquisa preliminar de Artes</strong></h4>
+                  <h5>📒Manuscrita, ou Digitada <strong>(25 pontos)</strong></h5>
+                  <h5>⚠️Obs: Para responder as perguntas utilize a apostila de Arte e a internet.</h5>
+                  <br>
+               <h6>1- Faça uma síntese do contexto social, político e econômico da segunda metade do século XX, e 			explique de que modo esse contexto se relaciona ao surgimento da Opart PopArt.</h6>
+                <h6>2- Escreva e comente os avanços tecnológicos e as transformações políticas que ocorreram no início do 		século XX.</h6>
+                <h6>3- Como a Arte se diferencia a partir de 1960?</h6>
+                <h6>4- Em sua opinião, o que caracteriza uma obra de Arte? Uma pintura ou escultura devem ter uma 			explicação clara para o observador?</h6>
+                <h6>5- Entre as tendências pós-modernas está o Happening, que em inglês significa “acontecimento” e 			integra diversas linguagens: cores, música, elementos do teatro, cinema, literatura e política. 			Como esse tipo de arte pode ser visto em momentos posteriores?</h6>
+                <br>
+                <h6>6- Conceituar os seguintes movimentos artísticos dando exemplos de seus artistas e obras:</h6>
+                  <ul>
+                    <li>Arte por computador</li>
+                    <li>Minimal Art</li>
+                    <li>Body Art</li>
+                    <li>Instalação</li>
+                    <li>Performance</li>
+                    <li>Land Art</li>
+                  </ul>
+                  </artes>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+
+                  <oftec style="text-align: justify;">
+                    <h5>🪨 BIANCA:</h5>
+                    <h4><strong>📆 19/09/2023 Perguntas do Filme da Oficina</strong></h4>
+                    <p>
+                    <h6> 1- Samantha e Theodore têm um relacionamento amoroso?
+                    <br> 2- O que são relacionamentos amorosos?
+                    <br> 3- Sanantha não tem um corpo humano? isso é um impeditivo para eles tenham 
+                    <br> um relacionamento amoroso? Se sim, como explicar um relacionamento, por exemplo á 
+                    <br> distância entre dois seres humanos que nunca tiveram contato físico.
+                    </p>
+                  </oftec>
+
+                  <br>
+                  <hr style="border-top: 3px solid rgb(255, 255, 255);">
+                  <br>
+                  
+                  <letrus style="text-align: justify;">
+                    <h5>📖 PRODUÇÃO TEXTUAL:</h5>
+                    <h4><strong>📆 15/09/2023 Atividade do Letrus</strong></h4>
+                    <h5> Professora, levará nós para Laboratorio</h5>
+                  </letrus>
+                </td>
+            </tr>
+        </table>
+      </div>
+   
+  </body>
+
+
+<script>
+document.getElementById('downloadLink').addEventListener('click', function() {
+    // Exibir uma mensagem quando o botão de download é clicado.
+    document.getElementById('downloadMessage').textContent = '⬇️ O download está em andamento...';
+  });
+</script>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+        <img src="../img/yay.png" width="auto" height="32">
+        <h10>© 2023 Alexandre Augusto</h10>
+    </div>
+</footer>
+</html>
